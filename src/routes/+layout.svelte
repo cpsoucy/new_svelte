@@ -1,5 +1,5 @@
 <header class="header">
-	<nav>
+	<nav class="navbar">
 		<a href="/">Home</a>
 		<a href="/posts">Posts</a>
 		<a href="/favs">Favs</a>
@@ -7,13 +7,13 @@
 		<a href="/donate">Donate</a>
 		<a href="/blog">Blog</a>
 		<a href="/about">About</a>
-	  </nav>
-  </header>
+	</nav>
+</header>
 
-  <slot />
+<slot />
 
-	<footer class="footer">
-		<div class="container">
-		  <p>&copy; Christian Soucy 2023<p>
-		</div>
-	</footer>
+<footer class="footer">
+	<div class="container">
+		<p>&copy; Christian Soucy 2023<p>
+	</div>
+</footer>

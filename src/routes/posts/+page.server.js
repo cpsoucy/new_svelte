@@ -1,9 +1,9 @@
-import { posts } from './data.js';
+// import { posts } from './data.js';
 
 export async function load({fetch}) {
   const rand = Math.floor(Math.random() * 10000) + 1;
 
-  const url = 'https://random-d.uk/api/v2' + rand + '&limit=12'; //what does &limit do here?
+  const url = 'https://random-d.uk/' + rand + '&limit=12'; //what does &limit do here?
   const request = await fetch(url);
   const results = await request.json();
   const ducks = results.data;
